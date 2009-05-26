@@ -1,4 +1,5 @@
 %w[rubygems rake rake/clean fileutils newgem rubigen].each { |f| require f }
+
 require File.dirname(__FILE__) + '/lib/features_report'
 
 # Generate all the Rake tasks
@@ -8,9 +9,9 @@ $hoe = Hoe.new('features_report', FeaturesReport::VERSION) do |p|
   p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
   p.rubyforge_name       = "features_report" # TODO this is default value
   p.extra_deps           = [
-                            ['trollop','>= 1.10.2'],
-                            ['cucumber', '>= 0.1.14'],
-                            ['prawn', '>= 0.3.0']
+                            ['trollop','= 1.10.2'],
+                            ['cucumber', '= 0.1.14'],
+                            ['prawn', '= 0.3.0']
                            ]
   p.extra_dev_deps = [
     ['newgem', ">= #{::Newgem::VERSION}"]

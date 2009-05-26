@@ -8,6 +8,7 @@ module FeaturesReport
     end
 
     def self.load_cucumber
+      gem "cucumber", "=0.1.14"
       require "cucumber"
       require "cucumber/treetop_parser/feature_en"
       Cucumber.load_language("en")

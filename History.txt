@@ -1,2 +1,6 @@
+== 0.1.1 2009-05-26
+
+Small change to freeze dependencies versions as api of cucumber and prawn have changed
+
 == 0.1.0 2009-01-09
 
